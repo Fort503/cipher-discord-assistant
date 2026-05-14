@@ -1,9 +1,9 @@
 require('colors')
 
 module.exports = {
-    name: 'clientReady',
+    name: 'ready',
     execute: (client) => {
-        client.on('clientReady', () => {
+        client.on('ready', () => {
             console.log(`✅ Estoy en línea como [${client.user.username}]`.green)
         })
     }

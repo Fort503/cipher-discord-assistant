@@ -26,7 +26,7 @@ async function comandosHandler(client) {
             }
         }
 
-        client.on('clientReady', () => {
+        client.on('ready', () => {
             client.guilds.cache.forEach(guild => guild.commands.set(slashArray))
             console.log(`📘 Comandos Cargados: [${comandosCargados.join(', ')}]`.blue)
         })
